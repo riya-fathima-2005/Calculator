@@ -1,51 +1,91 @@
-.maindiv{
 
-    height: 500px;
-    width: 350px;
+.maindiv {
+    width: 700px;
+    max-width: 400px;
+    height: 550px;
     background-color: rgb(182, 163, 163);
     text-align: center;
-    margin-left: 400px;
+    margin: 40px;
     border-radius: 15px;
     padding: 20px;
-    margin-top: 40px;
+    margin: auto;
 }
 
-.screen{
+.screen {
     text-align: right;
     height: 80px;
-    width: 300px;
+    width: 100%;
     font-size: 2rem;
-      margin-top: 10px;
+    margin-top: 10px;
 }
 
-.number{
-    width: 70px;
-    text-align: center;
+.flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.button {
+    width: 22%;
     height: 60px;
     margin: 5px;
-border-radius: 15px;
-    
+    border-radius: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
 
-.operator{
-    width: 70px;
-    text-align: center;
-    height: 60px; 
-   margin: 5px;
-  margin-top: 10px;
-  border-radius: 15px;
-  background-color: rgb(211, 201, 201);
+.number {
+    background-color: white;
+    margin-top: 20px;
 }
-.clear{
-     width: 70px;
-    text-align: center;
-    height: 60px; 
-   margin: 5px;
-   background-color: rgb(222, 105, 105) ;
-   border-radius: 15px;
+
+.operator {
+    background-color: rgb(211, 201, 201);
+    margin-top: 20px;
 }
-.button:hover{
-    border: 5px solid white;
+
+
+.clear {
+    background-color: rgb(222, 105, 105);
+    color: white;
+    margin-top: 20px;   
+}
+
+
+.button:hover {
+    border: 3px solid white;
     cursor: pointer;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .screen {
+        font-size: 1.8rem;
+        height: 70px;
+    }
+    
+    .button {
+        width: 23%;
+        height: 55px;
+    }
+}
+
+@media (max-width: 480px) {
+    .maindiv {
+        padding: 15px;
+    }
+
+    .screen {
+        font-size: 1.5rem;
+        height: 60px;
+    }
+
+    .button {
+        width: 22%;
+        height: 50px;
+        font-size: 1rem;
+    }
 }
