@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css" />
+</head>
+
+<body>
+
+    <div class="maindiv">
+
+        <input type="text" class="form-control screen" id="screen" placeholder="0" readonly>
+
+        <div class="flex">
+            <input class="button clear rounded" type="button" value="C" onclick="clearScreen()">
+            <input class="button operator rounded" type="button" value="." onclick="btnClick('.')">
+            <input class="button operator rounded" type="button" value="%" onclick="btnClick('%')">
+            <input class="button operator rounded" type="button" value="/" onclick="btnClick('/')">
+        </div>
+
+        <div class="flex">
+            <input class="button number rounded" type="button" value="9" onclick="btnClick('9')">
+            <input class="button number rounded" type="button" value="8" onclick="btnClick('8')">
+            <input class="button number rounded" type="button" value="7" onclick="btnClick('7')">
+            <input class="button operator rounded" type="button" value="x" onclick="btnClick('*')">
+        </div>
+
+        <div class="flex">
+            <input class="button number rounded" type="button" value="6" onclick="btnClick('6')">
+            <input class="button number rounded" type="button" value="5" onclick="btnClick('5')">
+            <input class="button number rounded" type="button" value="4" onclick="btnClick('4')">
+            <input class="button operator rounded" type="button" value="-" onclick="btnClick('-')">
+        </div>
+
+        <div class="flex">
+            <input class="button number rounded" type="button" value="3" onclick="btnClick('3')">
+            <input class="button number rounded" type="button" value="2" onclick="btnClick('2')">
+            <input class="button number rounded" type="button" value="1" onclick="btnClick('1')">
+            <input class="button operator rounded" type="button" value="+" onclick="btnClick('+')">
+        </div>
+
+        <div class="flex">
+            <input class="button clear rounded" type="button" value="AC" onclick="clearScreen()">
+            <input class="button number rounded" type="button" value="0" onclick="btnClick('0')">
+            <input class="button number rounded" type="button" value="00" onclick="btnClick('00')">
+            <input class="button operator rounded" type="button" value="=" onclick="calculate()">
+        </div>
+
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
